@@ -1,0 +1,33 @@
+SESSION10
+Bài 6 : Sự cố tài liệu dự án trên GitHub
+
+Tên lớp: HCM K26 CNTT2
+Môn học: Nhập môn công nghệ thông tin
+Họ và tên: LƯƠNG THANH THƯ
+
+Phần 1. Phân tích
+
+Sai lầm của Nam
+
+Dùng file nhị phân (.docx) cho Git: Git không đọc được nội dung bên trong, nên sửa một dấu phẩy cũng coi cả file đã đổi → báo Conflict toàn bộ, không dùng được Git Diff.
+Chọn định dạng trình duyệt không xem được: GitHub không hiển thị .docx, còn .md thì tự render.
+
+Bẫy mất 1 byte
+
+Word: cấu trúc file bị phá → hỏng toàn bộ file.
+Markdown: chỉ sai đúng 1 ký tự, phần còn lại vẫn đọc được. Vì sao Markdown an toàn và nhẹ hơn Là văn bản thô nên rất nhẹ. Lỗi nhỏ không làm hỏng cả file. Git Diff thấy đúng dòng bị sửa, ít Conflict. Mở được trên mọi thiết bị.
+
+Phần 2. Hoàn thiện
+Cách làm trên StackEdit: vào stackedit.io → dán đoạn giới thiệu, viết lại bằng cú pháp Markdown → menu # → Export to disk → As Markdown (.md).
+
+Kết quả mẫu (thay bằng nội dung thật của Nam):
+
+markdown
+# 🌱 GreenTech
+
+## Giới thiệu
+**GreenTech** là dự án nhóm của sinh viên PTIT, ứng dụng công nghệ để *bảo vệ môi trường*.
+
+## Mục tiêu
+- Giám sát chất lượng môi trường
+- Tiết kiệm năng lượng
